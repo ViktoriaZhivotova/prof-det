@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent {\small \S 3} \hfill {\small \scriptsize  \textbf{ЗАДАЧИ НА БЕСКОНЕЧНОЙ ПРЯМОЙ}} \hfill {\small 221}
+
+\vspace{0.5cm}
+
+Подставляя выражение (3) в (1), получаем:
+\[
+\frac{X''}{X} = \frac{T'}{T} = -\lambda^2,
+\]
+где \(\lambda^2\) — параметр разделения. Отсюда следует:
+\[
+T' + a^2\lambda^2T = 0, \tag{4}
+\]
+\[
+X'' + \lambda^2X = 0. \tag{5}
+\]
+
+Решая уравнения (4) и (5), найдем частные решения уравнения (1) вида
+\[
+u_\lambda(x, t) = A(\lambda)e^{-\lambda^2a^2t + i\lambda x}, \tag{6}
+\]
+удовлетворяющие условию ограниченности. Здесь \(\lambda\) — любое вещественное число \(-\infty < \lambda < \infty\); поэтому в (6) возьмем знак «плюс» и образуем функцию
+\[
+u(x, t) = \int_{-\infty}^{\infty} A(\lambda)e^{-a^2\lambda^2t + i\lambda x}\,d\lambda. \tag{7}
+\]
+
+Если производные, входящие в уравнение (1), можно вычислять путем дифференцирования под знаком интеграла (7), то функция (7), очевидно, будет удовлетворять уравнению (1) как суперпозиция частных решений этого уравнения.
+
+Требуя выполнения начального условия при \(t = 0\), будем иметь
+\[
+\Phi(x) = \int_{-\infty}^{\infty} A(\lambda)e^{i\lambda x}\,d\lambda. \tag{8}
+\]
+
+Воспользуемся теперь формулой обратного преобразования интеграла Фурье:
+\[
+A(\lambda) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\Phi(\xi)e^{-i\lambda\xi}\,d\xi. \tag{9}
+\]
+
+Подставляя (9) в (7) и меняя порядок интегрирования, получим:
+\[
+u(x, t) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty}\Phi(\xi)e^{-i\lambda\xi}\,d\xi\right]e^{-a^2\lambda^2t + i\lambda x}\,d\lambda =
+\]
+\[
+= \frac{1}{2\pi}\int_{-\infty}^{\infty}\left[\int_{-\infty}^{\infty}e^{-a^2\lambda^2t + i\lambda(x-\xi)}\,d\lambda\right]\Phi(\xi)\,d\xi. \tag{10}
+\]
+
+\newpage
+
+\noindent {\small 222} \hfill {\small \scriptsize {УРАВНЕНИЯ ПАРАБОЛИЧЕСКОГО ТИПА}} \hfill {\small [ГЛ. III}
+
+\vspace{0.5cm}
+
+Внутренний интеграл в (10) равен \(^1\))
+\[
+\frac{1}{2\pi}\int_{-\infty}^{\infty} e^{-a^2\lambda^2 t + i\lambda(x-\xi)}\,d\lambda = \frac{1}{2\sqrt{\pi a^2 t}} e^{-\frac{(x-\xi)^2}{4a^2 t}}. \tag{11}
+\]
+
+Подставляя (11) в (10), приходим к интегральному представлению искомого решения
+\[
+u(x, t) = \int_{-\infty}^{\infty} G(x, \xi; t) \varphi(\xi)\,d\xi, \tag{12}
+\]
+где
+\[
+G(x, \xi; t) = \frac{1}{2\sqrt{\pi a^2 t}} e^{-\frac{(x-\xi)^2}{4a^2 t}}. \tag{13}
+\]
+
+Функцию \(G(x, \xi; t)\), определяемую формулой (13), часто называют фундаментальным решением уравнения теплопроводности. Непосредственной проверкой можно убедиться в том, что функция
+\[
+G(x, \xi; t - t_0) = \frac{Q}{c\rho \sqrt{\pi a^2 (t - t_0)}} e^{-\frac{(x-\xi)^2}{4a^2 (t - t_0)}}, \tag{13'}
+\]
+представляет температуру в точке \(x\) в момент времени \(t\), если в начальный момент времени \(t = t_0\) в точке \(\xi\) выделяется количество тепла \(Q = c\rho\).
+
+Функция \(G(x, \xi, t - t_0)\) удовлетворяет уравнению теплопроводности по переменным \((x, t)\)\(^2\), что можно проверить непосредственным дифференцированием.
+
+\vspace{0.5cm}
+
+\noindent
+\(^1\) Б. М. Будак, С. В. Фомин, \textit{Кратные интегралы и ряды}, «Наука», 1965.
+
+\noindent
+\(^2\) В самом деле,
+\[
+G_x = -\frac{1}{2\sqrt{\pi}} \cdot \frac{x - \xi}{2[a^2(t - t_0)]^{3/2}} e^{-\frac{(x-\xi)^2}{4a^2(t - t_0)}},
+\]
+\[
+G_{xx} = \frac{1}{2\sqrt{\pi}} \left[ -\frac{1}{2[a^2(t - t_0)]^{3/2}} + \frac{(x - \xi)^2}{4[a^2(t - t_0)]^{5/2}} \right] e^{-\frac{(x-\xi)^2}{4a^2(t - t_0)}},
+\]
+\[
+G_t = \frac{1}{2\sqrt{\pi}} \left[ -\frac{a^2}{2[a^2(t - t_0)]^{3/2}} + \frac{a^2(x - \xi)^2}{4[a^2(t - t_0)]^{5/2}} \right] e^{-\frac{(x-\xi)^2}{4a^2(t - t_0)}},
+\]
+т. е.
+\[
+G_t = a^2 G_{xx}.
+\]
+
+\end{document}
