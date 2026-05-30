@@ -1,0 +1,120 @@
+\documentclass{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{booktabs} 
+
+\usetheme{Berlin}
+\usecolortheme{crane}
+\useinnertheme{circles}
+
+\title{История физико-математического факультета}
+\subtitle{Орловский государственный университет}
+\author{В.Е.Животова}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Основание и становление (1931--1932)}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{itemize}
+                \item \textbf{5 августа 1931 г.} — распоряжение о создании индустриально-педагогического института в Орле.
+                \item \textbf{16 октября 1931 г.} — начало занятий на физико-техническом факультете.
+                \item \textbf{1932 г.} — преобразование в физико-математический факультет (физмат).
+                \item Первый декан — \textbf{Трофим Ильич Поподько}.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth]{pic1.png}
+                \caption{ Т.И.Поподько}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Хронология развития}
+    \begin{table}
+        \centering
+        \caption{Значимые события в жизни факультета}
+        \small
+        \begin{tabular}{lp{7cm}}
+            \toprule
+            \textbf{Год} & \textbf{Событие} \\
+            \midrule
+            1935 & Первый выпуск (45 специалистов, диплом №1 у А.Н. Аносовой) \\
+            1941--1945 & Героизм в годы войны (Д. Сорин, В.А. Булычев) \\
+            1957 & Переезд в новое здание на ул. Комсомольская, 95 \\
+            1996 & Преобразование ОГПУ в Орловский государственный университет \\
+            2001 & Открытие собственной обсерватории \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Научное наследие и гордость факультета}
+    \begin{itemize}
+        \item \textbf{Игорь Аркадьевич Струков} — разработка космических платформ для изучения «черных дыр».
+        \item \textbf{Геннадий Андреевич Зюганов} — выпускник 1969 года, секретарь комитета комсомола.
+        \item \textbf{Федор Степанович Авдеев} — выпускник физмата, многолетний ректор университета.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{pic2.png}
+        \caption{Учебный корпус ОГПИ (1957)}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Факультет сегодня}
+    На текущий момент на факультете функционирует 7 кафедр под руководством декана \textbf{Т.Н. Можаровой}.
+    
+    \begin{table}
+        \centering
+        \footnotesize
+        \begin{tabular}{ll}
+            \toprule
+            \textbf{Кафедра} & \textbf{Заведующий} \\
+            \midrule
+            Мат. анализ и дифф. уравнения & проф. А.Н. Зарубин \\
+            Алгебра и мат. методы в экономике & проф. В.Д. Селютин \\
+            Геометрия и методика преподавания & проф. О.В. Тарасова \\
+            Информатика & доц. В.И. Дорофеева \\
+            Экспериментальная и теор. физика & проф. О.И. Марков \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    
+    \textbf{75-летие (2007):} 704 студента и 59 высококвалифицированных преподавателей.
+\end{frame}
+
+\begin{frame}{Традиции и студенческая жизнь}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            Физмат славится не только наукой, но и крепкими традициями:
+            \begin{itemize}
+                \item \textbf{Спорт:} Регулярные победы в спартакиадах (гиревой спорт, плавание).
+                \item \textbf{Туризм:} Восхождение студентов и преподавателей на \textit{Эльбрус} в честь юбилеев факультета.
+                \item \textbf{Творчество:} Традиционные вечера «Посвящение в студенты» и «Последний звонок».
+                \item \textbf{Связь поколений:} Встречи с ветеранами и развитие музейной экспозиции.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{figure}
+
+
+\centering
+                \includegraphics[width=\textwidth]{pic3.png}
+                \caption{Спортивная слава физмата}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\end{document}
